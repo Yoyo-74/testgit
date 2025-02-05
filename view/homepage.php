@@ -8,7 +8,7 @@
 <body>
     
 <h1>Les plus grandes villes 2012</h1>
-
+<h2>test git 1 branch</h2>
     <?php foreach($datas as $data): ?>
         <article>
             <p><?= $data->getNom() ?></p>
@@ -16,6 +16,7 @@
             <p><?= $data->getPopulation() ?></p>
         </article>
     <?php endforeach; ?>
+
 
 
 
