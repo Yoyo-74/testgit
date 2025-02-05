@@ -12,6 +12,7 @@
     <?php foreach($datas as $data): ?>
         <article>
             <p><?= $data->getNom() ?></p>
+            <p><?= $data->getDepartement() ?></p>
             <p><?= $data->getPopulation() ?></p>
             <p><?= $data->getRegion() ?></p>
         </article>

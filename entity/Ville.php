@@ -6,7 +6,7 @@ class Ville {
     private $departement;
     private $population;
     private $region;
-    private $regions;
+    
     
     // Constructor
     public function __construct(array $datas) {
@@ -33,6 +33,9 @@ class Ville {
     public function getPopulation() {
         return $this->population;
     }
+    public function getRegion() {
+        return $this->population;
+    }
     
 
     // Methods "Setters"
@@ -43,6 +46,9 @@ class Ville {
         $this->departement = $departement;
     }
     public function setPopulation(int $population) {
+        $this->population = $population;
+    }
+    public function setRegion(int $population) {
         $this->population = $population;
     }
     
