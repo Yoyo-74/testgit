@@ -5,6 +5,8 @@ class Ville {
     private $nom;
     private $departement;
     private $population;
+    private $region;
+    private $regions;
     
     // Constructor
     public function __construct(array $datas) {
