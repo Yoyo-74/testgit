@@ -34,7 +34,7 @@ class Ville {
         return $this->population;
     }
     public function getRegion() {
-        return $this->population;
+        return $this->region;
     }
     
 
@@ -48,8 +48,8 @@ class Ville {
     public function setPopulation(int $population) {
         $this->population = $population;
     }
-    public function setRegion(int $population) {
-        $this->population = $population;
+    public function setRegion(int $region) {
+        $this->region = $region;
     }
     
 }
