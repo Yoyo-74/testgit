@@ -5,7 +5,7 @@ class Ville {
     private $nom;
     private $departement;
     private $population;
-    private $region;
+    private $cp;
     
     
     // Constructor
@@ -33,8 +33,8 @@ class Ville {
     public function getPopulation() {
         return $this->population;
     }
-    public function getRegion() {
-        return $this->region;
+    public function getCp() {
+        return $this->cp;
     }
     
 
@@ -48,8 +48,8 @@ class Ville {
     public function setPopulation(int $population) {
         $this->population = $population;
     }
-    public function setRegion(int $region) {
-        $this->region = $region;
+    public function setCp(string $cp) {
+        $this->cp = $cp;
     }
     
 }

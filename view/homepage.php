@@ -14,7 +14,7 @@
             <p><?= $data->getNom() ?></p>
             <p><?= $data->getDepartement() ?></p>
             <p><?= $data->getPopulation() ?></p>
-            <p><?= $data->getRegion() ?></p>
+            <p><?= $data->getCp() ?></p>
         </article>
     <?php endforeach; ?>
 
