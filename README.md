@@ -28,6 +28,10 @@
         dans Terminal tapez : composer install 
         dans Terminal tapez : composer dump-autoload 
 
+7_ creer un fichier .htaccess à la racine du projer
+            RewriteEngine on
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteRule . index.php [L]
 
 
         

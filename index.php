@@ -9,6 +9,11 @@ $router->setBasePath('/testgit');
 // Le nom du controller # la méthode à appeler = 'ControllerVille#home'
 $router->map('GET', '/', 'ControllerVille#home', 'home');
 
+$router->map('GET', '/villespardepartement/[i:id]', 'ControllerVille#departement', 'departement');
+// la meme chose avec la methode post
+
+$router->map('POST', '/maroute', 'ControllerVille#departementPost', 'departementPost');
+
 $match = $router->match();
 
 // var_dump($match);

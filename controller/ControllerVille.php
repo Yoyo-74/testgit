@@ -17,4 +17,27 @@ class ControllerVille {
 
     }
 
+    public function departement($id) {
+        global $router;
+// c'est la methode qui a besoin du parametre
+        $model = new ModelVille();
+        // $datas renvoie à arrayobj 
+        $datas = $model ->readbydepartement($id);
+        require_once ('./view/villespardepartement.php');
+    }
+
+    public function departementPost() {
+        global $router;
+        if($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['id'])) {
+            $model = new ModelVille();
+            $id = $_POST['id'];
+            $datas = $model ->readbydepartement($id);
+
+            require_once ('./view/departement.php');
+
+        }      
+
+    }
+
+
 }
