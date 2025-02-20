@@ -17,12 +17,12 @@ class ControllerVille {
 
     }
 
-    public function departement($id) {
+    public function departement($id, $order) {
         global $router;
 // c'est la methode qui a besoin du parametre
         $model = new ModelVille();
         // $datas renvoie à arrayobj 
-        $datas = $model ->readbydepartement($id);
+        $datas = $model ->readbydepartement($id, $order);
         require_once ('./view/villespardepartement.php');
     }
 
@@ -39,5 +39,6 @@ class ControllerVille {
 
     }
 
+    
 
 }

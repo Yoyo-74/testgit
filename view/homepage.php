@@ -12,7 +12,8 @@
     <?php foreach($datas as $data): ?>
         <article>
             <p><?= $data->getNom() ?></p>
-            <p><a href="<?= $router->generate('departement', ["id"=> $data->getDepartement()]); ?>"><?= $data->getDepartement() ?></a></p>
+            <p><a href="<?= $router->generate('departement', ["id"=> $data->getDepartement(), "order"=>'population']); ?>"><?= $data->getDepartement() ?> by population</a></p>
+            <p><a href="<?= $router->generate('departement', ["id"=> $data->getDepartement(), "order"=>'surface']); ?>"><?= $data->getDepartement() ?> by surface</a></p>
             <!-- <p><?= $data->getPopulation() ?></p> -->
             <!-- <p><?= $data->getCp() ?></p> -->
 

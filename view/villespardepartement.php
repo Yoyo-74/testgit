@@ -25,7 +25,9 @@ foreach($datas as $data):
        
         <p><?= $data->getNom() ?></p>
        
-        <p><?= $data->getPopulation() ?></p>
+        <p>population : <?= $data->getPopulation() ?></p>
+        <p>surface : <?= $data->getSurface() ?></p>
+        
         
 
 

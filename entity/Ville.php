@@ -6,6 +6,7 @@ class Ville {
     private $departement;
     private $population;
     private $cp;
+    private $surface;
     
     
     // Constructor
@@ -36,6 +37,10 @@ class Ville {
     public function getCp() {
         return $this->cp;
     }
+    public function getSurface() {
+        return $this->surface;
+    }
+
     
 
     // Methods "Setters"
@@ -50,6 +55,9 @@ class Ville {
     }
     public function setCp(string $cp) {
         $this->cp = $cp;
+    }
+    public function setSurface(string $surface) {
+        $this->surface = $surface;
     }
     
 }
